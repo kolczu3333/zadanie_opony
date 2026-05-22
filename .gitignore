@@ -1,0 +1,24 @@
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/**/*.decrypt.private.php
+/compose.override.yaml
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+/.phpunit.cache/
+###< phpunit/phpunit ###
+
+###> IDE / editor ###
+/.idea/
+/.vscode/
+
+###> OS ###
+.DS_Store
+Thumbs.db

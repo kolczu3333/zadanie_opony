@@ -1,0 +1,37 @@
+services:
+  app:
+    image: webdevops/php-nginx-dev:8.4
+    ports:
+      - "18080:80"
+    volumes:
+      - .:/app
+    working_dir: /app
+    env_file:
+      - .env.dev.local
+    environment:
+      WEB_DOCUMENT_ROOT: /app/public
+      MYSQL_HOST: database
+      MYSQL_PORT: 3306
+    depends_on:
+      database:
+        condition: service_healthy
+
+  database:
+    image: mysql:8.0
+    env_file:
+      - .env.dev.local
+    environment:
+      MYSQL_DATABASE: stock
+      MYSQL_USER: stock
+    ports:
+      - "3307:3306"
+    volumes:
+      - database_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -uroot -p\"$$MYSQL_ROOT_PASSWORD\" || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  database_data:

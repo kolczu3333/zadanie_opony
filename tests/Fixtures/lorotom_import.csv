@@ -1,0 +1,4 @@
+our_code	producer_code	name	producer	quantity	price	ean
+IMP001	MPN001	NAME A	PROD_A	5	10,50	5900000000001
+IMP002	MPN002	NAME B	PROD_B	35	20,00	
+IMP003	MPN003	NAME C	PROD_C	1	invalid-price	5900000000003
