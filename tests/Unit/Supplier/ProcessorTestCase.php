@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Supplier;
 
-use App\Supplier\CsvValueNormalizer;
-use App\Supplier\ImportSkipLog;
+use App\Supplier\Import\ImportSkipLog;
+use App\Supplier\Normalizer\CsvValueNormalizer;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 

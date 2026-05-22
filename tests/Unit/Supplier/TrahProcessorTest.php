@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Supplier;
 
-use App\Supplier\TrahProcessor;
+use App\Supplier\Processor\TrahProcessor;
 use PHPUnit\Framework\Attributes\DataProvider;
 
 final class TrahProcessorTest extends ProcessorTestCase

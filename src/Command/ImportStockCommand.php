@@ -6,8 +6,8 @@ namespace App\Command;
 
 use App\Repository\StockBulkUpserterInterface;
 use App\Supplier\Dto\StockRowDto;
-use App\Supplier\ImportSkipLogFactory;
-use App\Supplier\SupplierRegistry;
+use App\Supplier\Import\ImportSkipLogFactory;
+use App\Supplier\Registry\SupplierRegistry;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;

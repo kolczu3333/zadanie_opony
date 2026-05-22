@@ -154,7 +154,13 @@ src/
   Exception/
   Serializer/StockItemSerializer.php
   Service/StockSearchService.php
-  Supplier/          # LorotomProcessor, TrahProcessor, SupplierRegistry
+  Supplier/
+    Contract/        # SupplierProcessorInterface, ImportSkipLoggerInterface
+    Processor/       # LorotomProcessor, TrahProcessor
+    Registry/        # SupplierRegistry
+    Import/          # skip log during CSV import
+    Normalizer/      # shared CSV value parsing
+    Dto/             # StockRowDto
 tests/
   Unit/Supplier/
   Functional/

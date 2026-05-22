@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Supplier;
 
-use App\Supplier\CsvValueNormalizer;
-use App\Supplier\LorotomProcessor;
-use App\Supplier\SupplierRegistry;
-use App\Supplier\TrahProcessor;
+use App\Supplier\Normalizer\CsvValueNormalizer;
+use App\Supplier\Processor\LorotomProcessor;
+use App\Supplier\Processor\TrahProcessor;
+use App\Supplier\Registry\SupplierRegistry;
 use PHPUnit\Framework\TestCase;
 
 final class SupplierRegistryTest extends TestCase
