@@ -12,7 +12,7 @@ services:
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
 
     _instanceof:
-        App\Supplier\SupplierProcessorInterface:
+        App\Supplier\Contract\SupplierProcessorInterface:
             tags: ['app.supplier_processor']
 
     # makes classes in src/ available to be used as services
@@ -24,7 +24,7 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
 
-    App\Supplier\SupplierRegistry:
+    App\Supplier\Registry\SupplierRegistry:
         arguments:
             $processors: !tagged_iterator app.supplier_processor
 

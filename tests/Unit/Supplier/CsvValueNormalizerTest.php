@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Supplier;
 
-use App\Supplier\CsvValueNormalizer;
+use App\Supplier\Normalizer\CsvValueNormalizer;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 

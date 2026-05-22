@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Supplier;
 
-use App\Supplier\LorotomProcessor;
+use App\Supplier\Processor\LorotomProcessor;
 use PHPUnit\Framework\Attributes\DataProvider;
 
 final class LorotomProcessorTest extends ProcessorTestCase
